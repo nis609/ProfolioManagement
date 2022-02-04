@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "389153516638",
+    "project_id": "walletmanagement-97cfd",
+    "storage_bucket": "walletmanagement-97cfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389153516638:android:84bccdbbd1a7621bc118cf",
+        "android_client_info": {
+          "package_name": "com.example.profolio_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389153516638-gosjrivnr1starlsdu8u764j9d5v562k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.profolio_management",
+            "certificate_hash": "ff64ffb39c5e33fc90c71e4757ce0f933fdbdc89"
+          }
+        },
+        {
+          "client_id": "389153516638-93d0siaij7cusjm8224btk0ih3ui5hth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiFbNgf3cbng-vNVsfp9TyvWTG98sAq5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389153516638-93d0siaij7cusjm8224btk0ih3ui5hth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

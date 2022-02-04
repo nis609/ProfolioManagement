@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<style>
+.container {
+  height: 300px;
+  position: relative;
+
+}
+
+.vertical-center {
+  margin: 10%;
+  position: absolute;
+  top: 80%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>
+
+<div class="container">
+    <div class="vertical-center">
+        <h4 id="title" style="text-align:center;margin:0 auto" >Proceeding Payment through eSewa...</h4>
+    </div>
+</div>
+
+
+
+<form action="https://uat.esewa.com.np/epay/main" method="POST" id="esewa-form" style="display:none">
+    <input value="" name="tAmt" type="hidden">
+    <input value="" name="amt" type="hidden">
+    <input value="" name="txAmt" type="hidden">
+    <input value="" name="psc" type="hidden">
+    <input value="" name="pdc" type="hidden">
+    <input value="" name="scd" type="hidden">
+    <input value="" name="pid" type="hidden">
+    <input value="" type="hidden" name="su">
+    <input value="" type="hidden" name="fu">
+    <input value="Pay now with eSewa ePay" type="submit">
+</form>
+
+
+</body>
+
+<script type="text/javascript">
+<!--alert("helll");-->
+    function requestPayment(tAmt, amt, txAmt, psc, pdc, scd, pid, su, fu) {
+
+
+        oForm = document.forms['esewa-form'];
+        oForm.elements['tAmt'].value = tAmt;
+        oForm.elements['amt'].value = amt;
+        oForm.elements['txAmt'].value = txAmt;
+        oForm.elements['psc'].value = psc;
+        oForm.elements['pdc'].value = pdc;
+        oForm.elements['scd'].value = scd;
+        oForm.elements['pid'].value = pid;
+        oForm.elements['su'].value = su;
+        oForm.elements['fu'].value = fu;
+
+        document.getElementById('esewa-form').submit();
+
+
+        // requestPayment(tAmt = 1000, amt = 200, txAmt = 100, psc = 20, pdc = 10, scd = "EPAYTEST", pid = "1", su = "#", fu = "#");
+    }
+</script>
+
+
+</html>
